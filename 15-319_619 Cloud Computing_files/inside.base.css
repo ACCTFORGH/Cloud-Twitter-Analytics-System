@@ -1,0 +1,32 @@
+.navbar {
+    min-height: 30px;
+}
+.navbar-header {
+    height: 30px;
+}
+.navbar-nav > li {
+    padding: 0px;
+}
+.navbar-nav > li > a {
+    padding: 10px 8px;
+}
+.navbar-brand {
+    padding: 5px;
+}
+
+.packed {
+    font-size: 85%;
+}
+.packed > thead > tr > th {
+    padding: 8px 4px;
+}
+.packed > tbody > tr > td {
+    padding: 8px 4px;
+}
+
+.table > thead > tr > th.left-thick {
+    border-left: solid 3px #ddd;
+}
+.table > tbody > tr > td.left-thick {
+    border-left: solid 3px #ddd;
+}
