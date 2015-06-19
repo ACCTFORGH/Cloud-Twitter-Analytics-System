@@ -13,16 +13,16 @@ HBase2: HBase connection and search methods for HBase-based solutions<br>
 JDBC4: Java MySQL connection and search methods for MySQL-based solutions<br>
 JDBCSelector.java: round robin style load balancer<br><br>
 
+<b>Backend:<b><br>
+The backend of the system is is based on MySQL and HBase respectively in Amazon Web Services (AWS). Both of them are loaded with the same data to compare and analyze the performance of SQL and NoSQL databases. HBase is configured from AWS EMR(Elastic MapReduce) clusters while MySQL is installed directly into AWS EC2 instances. Both of the two solutions should be configured and optimized to have stable support for heavy workloads. This is done through system cache and memory optimization, duplicating MySQL nodes,multi-threading/connection pool, etc. The scripts used for data loading is included in the repo. <br>
+1. load.sql and loadall.sql: SQL commands for loading filtered output into MySQL database<br>
+2. loadbase.py: python file for loading filtered output into HBase. HDFS bulk load commands are also used but not shown in the repo. <br><br> 
+
 <b>Query 2 ETL Codes</b><br>
 1. JsonFilter.java: This script cleans the original 1TB of Twitter API data and filters out malformed entries<br>
 2. batch process.py: automated script for running the filtering over the large datasets<br>
 3. SimpleTweet.java, Tweet.java: simplifying data objects for filtering assistance. <br>
 4. StringToDataStructure.java: converts JSON strings to Java objects for filtering purpose<br>
 5. SentiAndCensor.java: Defines methods for calculating Twitter sentiment score and censoring banned words (mostly vulgarities)<br>
-6. adduser.sql: SQL commands for adding users<br>
-7. load.sql and loadall.sql: SQL commands for loading filtered output into MySQL database<br>
-8. loadbase.py: python file for loading filtered output into HBase. HDFS bulk load commands are also used but not shown in the repo. <br><br>
-
-
 
 </p>
