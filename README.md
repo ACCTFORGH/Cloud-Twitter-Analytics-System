@@ -12,15 +12,15 @@ HBase2: HBase connection and search methods for HBase-based solutions<br>
 JDBC4: Java MySQL connection and search methods for MySQL-based solutions<br>
 JDBCSelector.java: round robin style load balancer<br><br>
 
-<b>ETL Codes</b><br>
-1. JsonFilter.java: For Q2. This script cleans the origin 1TB of Twitter API data and filters out malformed entries<br>
+<b>Query 2 ETL Codes</b><br>
+1. JsonFilter.java: This script cleans the original 1TB of Twitter API data and filters out malformed entries<br>
 2. batch process.py: automated script for running the filtering over the large datasets<br>
-3. SimpleTweet.java, Tweet.java: filtering assistance objects. <br>
+3. SimpleTweet.java, Tweet.java: simplifying data objects for filtering assistance. <br>
 4. StringToDataStructure.java: converts JSON strings to Java objects for filtering purpose<br>
-5. SentiAndCensor.java: For Q2. defines methods for calculating Twitter sentiment score and censoring banned words (mostly vulgarities)<br>
+5. SentiAndCensor.java: Defines methods for calculating Twitter sentiment score and censoring banned words (mostly vulgarities)<br>
 6. adduser.sql: SQL commands for adding users<br>
 7. load.sql and loadall.sql: SQL commands for loading filtered output into MySQL database<br>
-8. loadbase.py: python file for loading filtered output into HBase<br><br>
+8. loadbase.py: python file for loading filtered output into HBase. HDFS bulk load commands are also used but not shown in the repo. <br><br>
 
 
 
